@@ -1,0 +1,9 @@
+<h1>统计结果,总字数为{{count}}</h1>
+<h2>所输入信息</h2>
+{{text}}
+<br>
+<h2>字数出现频率</h2>
+{% for world,count in sorted %}
+{{ world}} - {{count}}
+<br>
+{% endfor %}
